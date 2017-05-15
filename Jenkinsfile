@@ -4,7 +4,6 @@ pipeline {
 	stages {
 		stage('Bake') {
 			steps {
-				echo 'hello'
 				sh	'docker build -t padayattil/jk8s:latest .'
 			}
 		}
